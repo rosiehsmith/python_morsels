@@ -1,7 +1,12 @@
+import string
+
 def count_words(sentence):
+    for char in string.punctuation:
+        if char != '\'':
+            sentence = sentence.replace(char,"")
+
     sentence = sentence.split(' ')
     d = {}
-    
     for word in sentence:
         word = word.lower()
         if word in d:
@@ -14,5 +19,5 @@ def count_words(sentence):
 
 # COMMENTS:
 # took about 30 min to solve
-# had to find out dictionary syntax
+# had to find out dictionary syntax and if replace exists
 # excited to start 
