@@ -1,7 +1,7 @@
 import unittest
 
 
-from count2 import count_words
+from count_soln1 import count_words
 
 
 class CountWordsTests(unittest.TestCase):
